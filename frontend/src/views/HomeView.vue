@@ -10,9 +10,6 @@
         <el-button type="warning" @click="goToAdminLogin">
           管理员登录
         </el-button>
-        <el-button type="primary" @click="goToProducts">
-          商品浏览
-        </el-button>
         <el-button type="info" @click="$router.push('/connectivity-test')">
           服务连通性测试
         </el-button>
@@ -45,11 +42,6 @@ const goToAdminLogin = () => {
     path: '/login',
     query: { type: 'admin' }
   });
-};
-
-// 跳转到商品浏览页面
-const goToProducts = () => {
-  router.push('/products');
 };
 </script>
 
